@@ -1,0 +1,12 @@
+use ExtUtils::MakeMaker;
+# See lib/ExtUtils/MakeMaker.pm for details of how to influence
+# the contents of the Makefile that is written.
+WriteMakefile(
+    'NAME'      => 'Simran::Log::Log',
+    'VERSION_FROM' => 'Log.pm', # finds $VERSION
+    'PREREQ_PM' => { 
+        'Carp' => 0,  
+        'Simran::Error::Error' => 0, 
+    },
+);
+
